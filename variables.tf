@@ -15,3 +15,14 @@ variable "dist_path" {
   type        = string
   default     = "./my-react-app/dist"
 }
+variable "mime_types" {
+  type = map(string)
+  default = {
+    ".html"  = "text/html"
+    ".css"   = "text/css"
+    ".js"    = "application/javascript"
+    ".jpg"   = "image/jpeg"
+    ".png"   = "image/png"
+  }
+}
+
